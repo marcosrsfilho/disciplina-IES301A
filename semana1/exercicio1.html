@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <script language= "JavaScript" type="text/JavaScript">
+        document.write("Implemente um script JavaScript que solicite ao usuário um número inteiro positivo. Assim que o usuário digitar um valor válido informe em uma janela de alerta se o número é par ou ímpar");
+        
+        let num = prompt("Digite um número inteiro positivo:");
+        if (num !== null && num !== "" && !isNaN(num)) {
+            num = parseInt(num);
+            if (num > 0) {
+                if (num % 2 === 0) {
+                    alert("O número " + num + " é par.");
+                } else {
+                    alert("O número " + num + " é ímpar.");
+                }
+            } else {
+                alert("Por favor, digite um número inteiro positivo válido.");
+            }
+        } else {
+            alert("Por favor, digite um número inteiro positivo válido.");
+        }
+    </script>
+</body>
+</html>
